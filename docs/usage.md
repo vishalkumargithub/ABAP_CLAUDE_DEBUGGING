@@ -2,17 +2,19 @@
 
 ## Selection screen
 
+![Selection screen of ZGCTS_EXPORT](selection-screen.png)
+
 | Block | Field | Meaning |
 |---|---|---|
-| Source package | *Export by package* / *Export by transport request* | Export mode |
-| | Package | Package to export (package mode, required). Root package for folder paths (request mode, optional) |
-| | Include subpackages | Walks down the package hierarchy in `TDEVC` |
-| | Transport request | Request to export (request mode, required) |
-| Target repository | Target folder on PC | Where the ZIP is downloaded |
-| | Repository name / description | Written to `.gcts.properties.json`. Defaults to the package name and description |
-| Options | Write metadata | Writes the `.asx.json` files |
-| | Write source code | Writes the `.abap` files |
-| | Simulation | Runs everything but downloads nothing |
+| Source Package | *Export the whole package* / *Export a TR* | Export mode: full package or one transport request |
+| | Root Package | Package to export (package mode, required). Root package for folder paths (request mode, optional) |
+| | Include SubPackages | Walks down the package hierarchy in `TDEVC` |
+| | Transport Request | Request to export (request mode, required) |
+| Target Repository | Frontend Download Folder | Where the ZIP is downloaded (F4 opens a folder picker) |
+| | Repository Name / Description | Written to `.gcts.properties.json`. Defaults to the package name and description |
+| Options | Write Metadata (.asx.json) | Writes the `.asx.json` files |
+| | Write ABAP Source Files | Writes the `.abap` files |
+| | Simulate | Runs everything but downloads nothing |
 
 The checks done when you press Execute:
 - In package mode, a package is required and must exist.
@@ -28,6 +30,8 @@ All files are built in memory and downloaded at the end in **one** step, as a si
 | By transport request | Request number: `DEVK900123.zip` |
 
 ## Result list
+
+![Result list after exporting package SAPBC_DATAMODEL](execution-result.png)
 
 After the run you get a summary (mode, root package, archive path, counts) and one line per object:
 
@@ -50,10 +54,10 @@ After the run you get a summary (mode, root package, archive path, counts) and o
 ## Git workflow
 
 ```text
-1. Export by package                → ZDEMO.zip
+1. Export the whole package         → ZDEMO.zip
 2. Unzip into a new Git repository  → git add . && git commit -m "Baseline ZDEMO"
 3. For each released transport request:
-     export by transport request    → DEVK900123.zip
+     export the TR (Export a TR)    → DEVK900123.zip
      unzip over the clone           → git add . && git commit -m "DEVK900123 <request text>"
 4. git log / git diff / your IDE    → change history with one commit per request
 ```
