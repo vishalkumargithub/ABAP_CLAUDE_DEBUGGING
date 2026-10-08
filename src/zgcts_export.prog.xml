@@ -13,13 +13,13 @@
     <item>
      <ID>I</ID>
      <KEY>T01</KEY>
-     <ENTRY>Source package</ENTRY>
+     <ENTRY>Source Package</ENTRY>
      <LENGTH>40</LENGTH>
     </item>
     <item>
      <ID>I</ID>
      <KEY>T02</KEY>
-     <ENTRY>Target repository</ENTRY>
+     <ENTRY>Target Repository</ENTRY>
      <LENGTH>40</LENGTH>
     </item>
     <item>
@@ -36,67 +36,67 @@
     <item>
      <ID>S</ID>
      <KEY>P_BYPKG</KEY>
-     <ENTRY>        Export by package</ENTRY>
-     <LENGTH>25</LENGTH>
+     <ENTRY>        Export the whole package</ENTRY>
+     <LENGTH>32</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_BYTR</KEY>
-     <ENTRY>        Export by transport request</ENTRY>
-     <LENGTH>35</LENGTH>
+     <ENTRY>        Export a TR</ENTRY>
+     <LENGTH>19</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_DESC</KEY>
-     <ENTRY>        Repository description</ENTRY>
+     <ENTRY>        Repository Description</ENTRY>
      <LENGTH>30</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_DEVC</KEY>
-     <ENTRY>        Package</ENTRY>
-     <LENGTH>15</LENGTH>
+     <ENTRY>        Root Package</ENTRY>
+     <LENGTH>20</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_DRY</KEY>
-     <ENTRY>        Simulation, no download</ENTRY>
-     <LENGTH>31</LENGTH>
+     <ENTRY>        Simulate</ENTRY>
+     <LENGTH>16</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_META</KEY>
-     <ENTRY>        Write metadata (.asx.json)</ENTRY>
+     <ENTRY>        Write Metadata (.asx.json)</ENTRY>
      <LENGTH>34</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_NAME</KEY>
-     <ENTRY>        Repository name</ENTRY>
+     <ENTRY>        Repository Name</ENTRY>
      <LENGTH>23</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_PATH</KEY>
-     <ENTRY>        Target folder on PC</ENTRY>
-     <LENGTH>27</LENGTH>
+     <ENTRY>        Frontend Download Folder</ENTRY>
+     <LENGTH>32</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_SRC</KEY>
-     <ENTRY>        Write source code (.abap)</ENTRY>
-     <LENGTH>33</LENGTH>
+     <ENTRY>        Write ABAP Source Files</ENTRY>
+     <LENGTH>31</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_SUB</KEY>
-     <ENTRY>        Include subpackages</ENTRY>
+     <ENTRY>        Include SubPackages</ENTRY>
      <LENGTH>27</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_TRKORR</KEY>
-     <ENTRY>        Transport request</ENTRY>
+     <ENTRY>        Transport Request</ENTRY>
      <LENGTH>25</LENGTH>
     </item>
    </TPOOL>

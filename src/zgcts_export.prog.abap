@@ -15,17 +15,17 @@
 *&     Export ABAP package to gCTS-shaped repository on frontend
 *&
 *&   Text symbols                  Selection texts
-*&     T01  Source package           P_BYPKG   Export by package
-*&     T02  Target repository        P_BYTR    Export by transport request
-*&     T03  Options                  P_DEVC    Package
-*&                                   P_SUB     Include subpackages
-*&                                   P_TRKORR  Transport request
-*&                                   P_PATH    Target folder on PC
-*&                                   P_NAME    Repository name
-*&                                   P_DESC    Repository description
-*&                                   P_META    Write metadata (.asx.json)
-*&                                   P_SRC     Write source code (.abap)
-*&                                   P_DRY     Simulation, no download
+*&     T01  Source Package           P_BYPKG   Export the whole package
+*&     T02  Target Repository        P_BYTR    Export a TR
+*&     T03  Options                  P_DEVC    Root Package
+*&                                   P_SUB     Include SubPackages
+*&                                   P_TRKORR  Transport Request
+*&                                   P_PATH    Frontend Download Folder
+*&                                   P_NAME    Repository Name
+*&                                   P_DESC    Repository Description
+*&                                   P_META    Write Metadata (.asx.json)
+*&                                   P_SRC     Write ABAP Source Files
+*&                                   P_DRY     Simulate
 *&---------------------------------------------------------------------*
 *& Exports an ABAP package to a gCTS-shaped repository on the frontend.
 *&
